@@ -8,16 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <CS290GECC/CS290GECC.h>
+#import <openssl/bn.h>
 
 int main(int argc, const char * argv[])
 {
-
+    
     @autoreleasepool {
         
         // insert code here...
-        NSLog(@"Hello, World!");
-        [CSLog log];
-        
+        [ECC testMain];
     }
     return 0;
 }
