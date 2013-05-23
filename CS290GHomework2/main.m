@@ -16,7 +16,7 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         // insert code here...
-        [ECC testMain];
+        [ECC HW2Driver];
     }
     return 0;
 }
