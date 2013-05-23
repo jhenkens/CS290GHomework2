@@ -14,7 +14,9 @@ int main(int argc, const char * argv[])
 {
     
     @autoreleasepool {
-        
+#ifdef DEBUG
+        NSLog(@"Running in debug CS290GHW2");
+#endif
         // insert code here...
         [ECC HW2Driver];
     }
