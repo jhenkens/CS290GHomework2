@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D403E3C01751611100F8E859 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D403E3BF1751611100F8E859 /* libcrypto.a */; };
 		D4ACF594173EF952002E1EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACF593173EF952002E1EC6 /* Foundation.framework */; };
 		D4ACF597173EF952002E1EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACF596173EF952002E1EC6 /* main.m */; };
 		D4ACF59B173EF952002E1EC6 /* CS290GHomework2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4ACF59A173EF952002E1EC6 /* CS290GHomework2.1 */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D403E3BF1751611100F8E859 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../Library/Developer/Xcode/DerivedData/CS290GHomework2-brszekghknmswjdcjmhnydkjxlux/Build/Products/Release/libcrypto.a"; sourceTree = "<group>"; };
 		D4ACF590173EF952002E1EC6 /* CS290GHomework2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS290GHomework2; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4ACF593173EF952002E1EC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4ACF596173EF952002E1EC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D403E3C01751611100F8E859 /* libcrypto.a in Frameworks */,
 				D4ACF5AD173EF97B002E1EC6 /* CS290GECC.framework in Frameworks */,
 				D4ACF594173EF952002E1EC6 /* Foundation.framework in Frameworks */,
 			);
@@ -75,6 +78,7 @@
 		D4ACF587173EF952002E1EC6 = {
 			isa = PBXGroup;
 			children = (
+				D403E3BF1751611100F8E859 /* libcrypto.a */,
 				D4ACF5A1173EF96B002E1EC6 /* CS290GECC.xcodeproj */,
 				D4ACF595173EF952002E1EC6 /* CS290GHomework2 */,
 				D4ACF592173EF952002E1EC6 /* Frameworks */,
@@ -279,6 +283,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CS290GHomework2/CS290GHomework2-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CS290GHomework2-brszekghknmswjdcjmhnydkjxlux/Build/Products/Release\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -288,6 +296,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CS290GHomework2/CS290GHomework2-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CS290GHomework2-brszekghknmswjdcjmhnydkjxlux/Build/Products/Release\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
